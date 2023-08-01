@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Me</title>
+    <style>
+        .formme{
+            border: 1px solid rgb(50, 48, 48);
+            border-radius: 10px;
+            width: 450px;
+            padding-left: 30px;
+            padding-bottom: 30px;
+            background-color: rgb(166, 210, 203);
+        }
+        .email,.text ,.sel {
+            width: 250px;
+            padding-bottom: 2px;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a> |
+        <a href="./education.html">Education</a> |
+        <a href="./work.html">Work</a> |
+        <a href="./contract.html">Contract</a> |
+    </nav>
+    <hr />
+    <h1>Contract Me</h1>
+    <div class="formme">
+        <h3>Enter your info.</h3>
+        <label for="names">Your Name</label><br>
+        <input class="text" type="text" id="names" name="name"><br>
+
+        <label for="email">Your Email</label><br>
+        <input class="email" type="email" id="email" name="email"><br>
+
+        <form action="#">
+            Gender <br>
+            <select class="sel" name="gender">
+                <option value="x">Select...</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </form>
+
+        <label for="comments">Message</label><br>
+        <textarea name="comment" id="comments" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+    </div>
+</body>
+</html>
